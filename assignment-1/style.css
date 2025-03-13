@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d8da3d;
+}
+.left-side-bar {
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding: 30px;
+}
+.main-container {
+  width: 70%;
+  float: right;
+  color: #80007e;
+  white-space: nowrap;
+}
+.options {
+  background-color: white;
+  padding: 4px 20px 4px 5px;
+  text-align: left;
+  color: #80007e;
+  margin-bottom: 4px;
+  border-right: 20px solid black;
+}
+.footer {
+  margin-top: 70px;
+  border-top: 2px dashed #80007e;
+}
