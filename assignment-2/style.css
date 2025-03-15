@@ -11,7 +11,6 @@ body {
 }
 .main-container {
   width: 80%;
-  float: left;
   color: #80007e;
   display: inline-block;
   white-space: nowrap;
@@ -52,7 +51,11 @@ body {
 }
 .box-text > div {
   height: 10px;
-  padding: 17px;
+  width: 850px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .dashed-box {
   border: 2px dashed black;
