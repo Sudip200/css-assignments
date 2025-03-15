@@ -19,6 +19,7 @@ body {
 .paragraphs {
   font-family: "Times New Roman", Times, serif;
   font-weight: 2;
+  padding-bottom: 30px;
 }
 .options {
   background-color: white;
@@ -28,14 +29,46 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 200;
   margin-bottom: 7px;
-  border-right: 20px solid black;
+}
+.options:nth-child(odd) {
+  border-right: 20px solid #ff7f00;
+}
+.options:nth-child(even) {
+  border-right: 20px solid #0000ff;
 }
 .footer {
-  margin-top: 70px;
+  margin-top: 40px;
   font-style: italic;
-  border-top: 1px dashed #80007e;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .footer p {
   font-weight: 400;
+}
+.box-text {
+  border-top: 1px dashed #80007e;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  font-family: serif;
+}
+.box-text > div {
+  height: 10px;
+  padding: 17px;
+}
+.dashed-box {
+  border: 2px dashed black;
+  margin-bottom: 10px;
+  color: black;
+}
+.red-dashed-box {
+  border: 2px dashed red;
+  color: black;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.round-box {
+  border: 2px dotted #0000ff;
+  text-align: center;
+  font-weight: 600;
+  color: black;
 }
