@@ -21,7 +21,7 @@ body {
     "main main main about"
     "main main main about";
   overflow: hidden;
-  border: 10px solid black;
+  box-sizing: border-box;
 }
 .header {
   grid-area: header;
