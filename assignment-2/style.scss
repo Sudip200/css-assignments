@@ -1,0 +1,126 @@
+  // variables used here 
+  $background-color:#d8da3d;
+  $main_container_color:#80007e;
+  $orange_border:#ff7f00;
+  $blue_border:#0000ff;
+  // mixin to add animation effect 
+  @mixin bounceAnimation {
+    animation: bounceEffect 1s;
+  }
+ /* texts should not wrap by setting white space nowrap */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    white-space: nowrap;
+  }
+  .left-side-bar {
+    // left side bar has nested options div which have set to colors alternately by odd and even child 
+    width: 200px;
+    height: 100%;
+    float: left;
+    padding: 30px;
+    .options {
+      background-color: white;
+      padding: 6px 20px 6px 5px;
+      text-align: left;
+      color: $main_container_color;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 200;
+      margin-bottom: 7px;
+      &:nth-child(odd){
+        border-right: 20px solid $orange_border
+      }
+      &:nth-child(even){
+        border-right: 20px solid $blue_border;
+      }
+    }
+  }
+  .main-container {
+    // main container has nested paragrahs boxed-text div container 
+    width: 80%;
+    color: $main_container_color;
+    display: inline-block;
+    white-space: nowrap;
+    .paragraphs {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 2;
+      padding-bottom: 30px;
+    }
+    .box-text {
+      //box text container has  3 divs
+      border-top: 1px dashed #80007e;
+      padding-top: 20px;
+      padding-bottom: 0px;
+      font-family: serif;
+      div {
+        height: 10px;
+        width: 850px;
+        padding: 10px 10px 16px 10px;
+
+      }
+      .dashed-box {
+        border: 2px dashed black;
+        margin-bottom: 10px;
+        color: black;
+        transition: transform 0s ease-in-out;
+        &:hover {
+          @include bounceAnimation()
+        }
+      }
+      .red-dashed-box {
+        border: 2px dashed red;
+        color: black;
+        font-style: italic;
+        text-align: right;
+        margin-bottom: 10px;
+        transition: transform 0s ease-in-out;
+        &:hover {
+         @include bounceAnimation()
+        }
+      }
+      .round-box {
+        border: 2px dotted #0000ff;
+        text-align: center;
+        font-weight: 600;
+        color: black;
+        transition: transform 0s ease-in-out;
+        &:hover {
+          @include bounceAnimation()
+        }
+      }
+    }
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      p {
+        font-weight: 400;
+      }
+    }
+    
+ 
+ 
+
+  }
+  // bounce animation 
+  @keyframes bounceEffect {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

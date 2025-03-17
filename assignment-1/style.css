@@ -12,7 +12,7 @@ body {
   float: left;
   padding: 30px;
 }
-
+/* inline block so it should not wrap */
 .main-container {
   width: 80%;
   color: #80007e;
@@ -23,6 +23,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-weight: 2;
 }
+/* option style with border left to make required style */
 .options {
   background-color: white;
   padding: 6px 20px 6px 5px;
@@ -33,6 +34,7 @@ body {
   margin-bottom: 7px;
   border-right: 20px solid black;
 }
+/* footer part style */
 .footer {
   margin-top: 70px;
   font-style: italic;
