@@ -1,6 +1,6 @@
 .container1,
 .container2 {
-  width: 70%;
+  width: 900px;
   border: 2px solid black;
   box-sizing: border-box;
   /* auto to make the div center of body and 20 px bottom margin */
@@ -12,17 +12,18 @@
 /* setting image background height and size to fit container div */
 .image1,
 .image2 {
-  height: 211px;
   background-image: url("Assignment4\(1\).PNG");
   background-size: 101%;
   background-repeat: no-repeat;
 }
 /* setting to top */
 .image1 {
+  height: 180px;
   background-position: top;
 }
 /* setting image to bottom position */
 .image2 {
+  height: 200px;
   background-position: bottom;
 }
 /* 3rd image container with fix width and height */
