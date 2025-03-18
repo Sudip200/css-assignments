@@ -59,7 +59,7 @@ nav ul a {
   color: white;
   font-size: 20px;
 }
-
+/* first container style */
 .main_container {
   display: flex;
   margin-top: 50px;
@@ -86,6 +86,7 @@ nav ul a {
   font-size: 1.1em;
   color: white;
 }
+/* first image style */
 .image_container {
   padding-left: 30px;
 }
@@ -99,6 +100,7 @@ nav ul a {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   transform: scale(1.02);
 }
+/* second container style */
 .second_container {
   background-color: #68edb6;
   display: flex;
@@ -122,10 +124,12 @@ nav ul a {
   font-size: 1.1em;
   color: white;
 }
+/* second image style */
 .image_container_vr img {
   width: 350px;
   height: 300px;
 }
+/* image hover effect */
 .image_container_vr img:hover {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -150,6 +154,7 @@ nav ul a {
   text-align: center;
   width: 200px;
 }
+/* hover effects on cards */
 .card:nth-child(1):hover {
   background-color: #ff00ff;
 }
@@ -165,6 +170,7 @@ nav ul a {
 .card:nth-child(5):hover {
   background-color: #444;
 }
+/* animation effect on icon */
 .card:hover .icon {
   background-color: white;
   transform: rotate(360deg);
@@ -220,7 +226,6 @@ footer {
   width: 100%;
   margin: auto;
 }
-
 .footer-left {
   display: flex;
   align-items: center;
